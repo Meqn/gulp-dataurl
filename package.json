@@ -1,0 +1,36 @@
+{
+  "name": "gulp-dataurl",
+  "version": "1.1.0",
+  "description": "A gulp plugin that converts matched file paths into base64-encoded data URI strings.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "gulp plugin",
+    "gulp-base64",
+    "data URI",
+    "base64",
+    "dataurl"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "*",
+    "diy-log": "^2.5.1",
+    "file-access": "^1.1.0",
+    "mime": "^3.0.0",
+    "through2": "^4.0.2"
+  }
+}
