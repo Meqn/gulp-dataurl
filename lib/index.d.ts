@@ -8,7 +8,6 @@ interface IOptions {
 
   /**
    * Supported extensions
-   * @default ['.svg', '.png', '.jpg', '.jpeg', '.gif']
    */
   extensions?: string | string[]
 
