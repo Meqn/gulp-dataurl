@@ -28,33 +28,27 @@ jobs:
       
       # 下面是处理 build 和 npm发布逻辑
       - uses: actions/checkout@v3
-        if: ${{ steps.release.outputs.release_created }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 8
-        if: ${{ steps.release.outputs.release_created }}
 
       - name: Install node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
-        if: ${{ steps.release.outputs.release_created }}
       
       - name: CI
         run: |
           pnpm install --no-frozen-lockfile
           pnpm test -- --coverage
-          pnpm build
-        if: ${{ steps.release.outputs.release_created }}
       
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        if: ${{ steps.release.outputs.release_created }}
 
       - run: npm publish
         env:
