@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "test": "__tests__"
   },
   "scripts": {
     "test": "jest"
@@ -24,8 +25,16 @@
     "base64",
     "dataurl"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meqn/gulp-dataurl.git"
+  },
+  "author": "Mervin <mengqing723@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meqn/gulp-dataurl/issues"
+  },
+  "homepage": "https://github.com/meqn/gulp-dataurl#readme",
   "dependencies": {
     "@types/node": "*",
     "diy-log": "^2.5.1",
