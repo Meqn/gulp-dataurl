@@ -12,8 +12,8 @@ dependencies:
     specifier: ^2.5.1
     version: 2.5.1
   file-access:
-    specifier: ^1.1.0
-    version: 1.1.0
+    specifier: ^1.1.2
+    version: 1.1.2
   mime:
     specifier: ^3.0.0
     version: 3.0.0
@@ -1127,8 +1127,8 @@ packages:
       bser: 2.1.1
     dev: true
 
-  /file-access@1.1.0:
-    resolution: {integrity: sha512-Q+5tFbc0rXX2Lp2azT35yghCHe8pTGJBX1zTWSgSyLgSAPJqDLOgYZTdCnz/NTkQ/W0pWKADQas8MkpO6LF52Q==}
+  /file-access@1.1.2:
+    resolution: {integrity: sha512-hwUE5SvbJ5uORbQ+YJ9QXCCVInZ9emwnm8y+xh5Q9vWUvn7DwxIg0yh2lUTE7MfDvfwXvOD6IOyy2BpRfPFI1Q==}
     engines: {node: '>=12'}
     dev: false
 
